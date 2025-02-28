@@ -9,7 +9,9 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">User Panel</a>
+        <a class="navbar-brand" href="#">
+            {{ Auth::user()->name ?? 'User Panel' }}
+        </a>
             <a class="btn btn-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
