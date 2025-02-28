@@ -1,54 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Halaman Utama')</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">MyApp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-                    @guest
-                        <!-- Jika belum login, tampilkan Login & Register -->
-                        <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3" href="{{ route('login') }}">Login</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-success text-white px-3 ms-2" href="{{ route('register') }}">Registrasi</a></li>
-                    @else
-                        <!-- Jika sudah login, tampilkan Dashboard & Logout -->
-                        @if(auth()->user()->role === 'admin')
-                            <li class="nav-item"><a class="nav-link btn btn-warning text-dark px-3" href="{{ route('admin.dashboard') }}">Dashboard Admin</a></li>
-                        @else
-                            <li class="nav-item"><a class="nav-link btn btn-info text-white px-3" href="{{ route('dashboard') }}">Dashboard</a></li>
-                        @endif
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
-                        <li class="nav-item">
-                            <form action="{{ route('logout') }}" method="POST" class="d-inline">
-                                @csrf
-                                <button type="submit" class="nav-link btn btn-danger text-white px-3 ms-2">Logout</button>
-                            </form>
-                        </li>
-                    @endguest
-                </ul>
-            </div>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body class="font-sans antialiased">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            @include('layouts.navigation')
+
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white dark:bg-gray-800 shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
+
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
         </div>
-    </nav>
-    
-    <div class="container mt-4">
-        @yield('content')
-    </div>
-
-    <footer class="bg-dark text-white text-center py-3 mt-4">
-        &copy; {{ date('Y') }} MyApp. All rights reserved.
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </body>
 </html>
