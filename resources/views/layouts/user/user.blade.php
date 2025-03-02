@@ -6,6 +6,7 @@
     <title>User Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <style>
         .bg-pink-custom {
             background-color: #d63384 !important;
@@ -18,6 +19,44 @@
         }
         .btn-custom:hover {
             background-color: #b62b6f !important;
+        }
+        /* Styling Search Bar & Filter Button */
+        .search-container {
+            position: relative;
+            width: 100%;
+            max-width: 250px;
+        }
+        .search-input {
+            width: 100%;
+            padding-right: 45px; /* Beri ruang untuk tombol filter */
+        }
+        .filter-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .filter-btn:hover {
+            background-color: #b62b6f;
+        }
+        /* Responsif untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .search-container {
+                max-width: 200px;
+            }
+            .btn-custom {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -65,17 +104,19 @@
                 </div>
 
                 <!-- Search Bar -->
-                <form class="d-flex">
-                    <input class="form-control rounded-4 px-3 py-2" type="search" placeholder="Search..." aria-label="Search">
-                    <button class="btn btn-custom rounded-4 px-3 py-2 ms-2" type="submit">Search</button>
-                </form>
+                <div class="search-container">
+                    <input class="form-control rounded-4 px-3 py-2 search-input" type="search" placeholder="Search..." aria-label="Search" id="searchInput">
+                    <button class="filter-btn" id="filterBtn" type="button">
+                        <i class="fas fa-filter"></i> <!-- Ikon Filter -->
+                    </button>
+                </div>
             </div>
 
             <!-- Dropdown Profil (Kanan) -->
             @auth
             <div class="dropdown ms-auto">
                 <a class="d-flex align-items-center text-decoration-none dropdown-toggle text-white" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="{{ Auth::user()->profile_photo ?? 'https://via.placeholder.com/40' }}" class="rounded-circle me-2" width="40" height="40" alt="Profile">
+                <img src="{{ asset('uploads/members/default-profile.png') }}" width="60" height="40" class="rounded-circle">
                     <span>{{ Auth::user()->name }}</span>
                 </a>
 
