@@ -12,7 +12,6 @@
         <div class="container d-flex justify-content-between align-items-center">
         <h1 class="text-2xl font-bold text-orange-500" href="#">{{ config('app.name', 'User Panel') }}</h1>
         
-
             @auth
             <div class="dropdown">
                 <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
