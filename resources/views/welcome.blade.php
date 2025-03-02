@@ -8,19 +8,21 @@
 </head>
 <body class="bg-gray-100">
     <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-orange-500">{{ config('app.name', 'Laravel') }}</h1>
+        <!-- Nama Aplikasi (Pink) -->
+        <h1 class="text-2xl font-bold text-[#d63384]">{{ config('app.name', 'Laravel') }}</h1>
+
         <nav>
         @if (Route::has('login'))
                 @auth
                     @if(Auth::user()->is_admin)
-                        <a href="{{ url('/admin/dashboard') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <a href="{{ url('/admin/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @else
-                        <a href="{{ url('/user/dashboard') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <a href="{{ url('/user/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @endif
                 @else
-                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
                     @endif
                 @endauth
             @endif
@@ -75,8 +77,10 @@
         </div>
     </section>
     
-    <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>&copy; {{ date('Y') }} {{ config('app.name', 'Laravel') }}. All rights reserved.</p>
+    <!-- Footer dengan Nama Aplikasi Berwarna Pink -->
+    <footer class="bg-[#d63384] text-white py-6 text-center">
+        <p>&copy; {{ date('Y') }} <span class="font-bold">{{ config('app.name', 'Laravel') }}</span>. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
