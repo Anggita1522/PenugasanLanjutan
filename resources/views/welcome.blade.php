@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wattpad Landing Page</title>
+    <title>{{ config('app.name', 'Laravel') }} Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
     <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-orange-500">Wattpad</h1>
+        <h1 class="text-2xl font-bold text-orange-500">{{ config('app.name', 'Laravel') }}</h1>
         <nav>
         @if (Route::has('login'))
                 @auth
@@ -31,7 +31,7 @@
         @auth
             <h2 class="text-4xl font-bold">Kamu sudah login, silahkan kembali ke dashboard</h2>
         @else
-            <h2 class="text-4xl font-bold">Hi, we're Wattpad.</h2>
+            <h2 class="text-4xl font-bold">Hi, we're {{ config('app.name', 'Laravel') }}.</h2>
             <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
                 The world's largest storytelling community, home to 89 million people who love original stories.
             </p>
@@ -58,7 +58,7 @@
     </section>
     
     <section class="text-center py-16 bg-gray-200 px-6">
-        <h3 class="text-2xl font-bold">How Wattpad Works</h3>
+        <h3 class="text-2xl font-bold">How {{ config('app.name', 'Laravel') }} Works</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             <div class="p-6 bg-white shadow-md rounded-lg">
                 <h4 class="text-xl font-semibold">Create</h4>
@@ -76,7 +76,7 @@
     </section>
     
     <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>&copy; 2025 Wattpad. All rights reserved.</p>
+        <p>&copy; {{ date('Y') }} {{ config('app.name', 'Laravel') }}. All rights reserved.</p>
     </footer>
 </body>
 </html>
