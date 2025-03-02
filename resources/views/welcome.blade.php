@@ -12,7 +12,11 @@
         <nav>
         @if (Route::has('login'))
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @if(Auth::user()->is_admin)
+                        <a href="{{ url('/admin/dashboard') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @else
+                        <a href="{{ url('/user/dashboard') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @endif
                 @else
                     <a href="{{ route('login') }}" class="font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
                     @if (Route::has('register'))
@@ -24,11 +28,16 @@
     </header>
     
     <section class="text-center py-20 px-6 bg-orange-100">
-        <h2 class="text-4xl font-bold">Hi, we're Wattpad.</h2>
-        <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
-            The world's largest storytelling community, home to 89 million people who love original stories.
-        </p>
+        @auth
+            <h2 class="text-4xl font-bold">Kamu sudah login, silahkan kembali ke dashboard</h2>
+        @else
+            <h2 class="text-4xl font-bold">Hi, we're Wattpad.</h2>
+            <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
+                The world's largest storytelling community, home to 89 million people who love original stories.
+            </p>
+        @endauth
     </section>
+
     
     <section class="py-16 px-6 max-w-4xl mx-auto">
         <h3 class="text-2xl font-bold text-center">See Your Story...</h3>
