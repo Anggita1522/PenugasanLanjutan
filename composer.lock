@@ -562,7 +562,7 @@
             "homepage": "https://github.com/fruitcake/php-cors",
             "keywords": [
                 "cors",
-                "laravel",
+                "Laravel",
                 "symfony"
             ],
             "support": {
@@ -1055,16 +1055,16 @@
             "time": "2025-02-03T10:55:03+00:00"
         },
         {
-            "name": "laravel/framework",
+            "name": "Laravel/framework",
             "version": "v10.48.28",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
+                "url": "https://github.com/Laravel/framework.git",
                 "reference": "e714e7e0c1ae51bf747e3df5b10fa60c54e3e0e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e714e7e0c1ae51bf747e3df5b10fa60c54e3e0e1",
+                "url": "https://api.github.com/repos/Laravel/framework/zipball/e714e7e0c1ae51bf747e3df5b10fa60c54e3e0e1",
                 "reference": "e714e7e0c1ae51bf747e3df5b10fa60c54e3e0e1",
                 "shasum": ""
             },
@@ -1083,8 +1083,8 @@
                 "ext-tokenizer": "*",
                 "fruitcake/php-cors": "^1.2",
                 "guzzlehttp/uri-template": "^1.0",
-                "laravel/prompts": "^0.1.9",
-                "laravel/serializable-closure": "^1.3",
+                "Laravel/prompts": "^0.1.9",
+                "Laravel/serializable-closure": "^1.3",
                 "league/commonmark": "^2.2.1",
                 "league/flysystem": "^3.8.0",
                 "monolog/monolog": "^3.0",
@@ -1196,7 +1196,7 @@
                 "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
                 "guzzlehttp/guzzle": "Required to use the HTTP Client and the ping methods on schedules (^7.5).",
-                "laravel/tinker": "Required to use the tinker console command (^2.0).",
+                "Laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
                 "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.0).",
                 "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.3).",
@@ -1246,32 +1246,32 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 }
             ],
             "description": "The Laravel Framework.",
-            "homepage": "https://laravel.com",
+            "homepage": "https://Laravel.com",
             "keywords": [
                 "framework",
-                "laravel"
+                "Laravel"
             ],
             "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
+                "issues": "https://github.com/Laravel/framework/issues",
+                "source": "https://github.com/Laravel/framework"
             },
             "time": "2025-01-31T10:04:17+00:00"
         },
         {
-            "name": "laravel/prompts",
+            "name": "Laravel/prompts",
             "version": "v0.1.25",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/prompts.git",
+                "url": "https://github.com/Laravel/prompts.git",
                 "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/7b4029a84c37cb2725fc7f011586e2997040bc95",
+                "url": "https://api.github.com/repos/Laravel/prompts/zipball/7b4029a84c37cb2725fc7f011586e2997040bc95",
                 "reference": "7b4029a84c37cb2725fc7f011586e2997040bc95",
                 "shasum": ""
             },
@@ -1283,7 +1283,7 @@
             },
             "conflict": {
                 "illuminate/console": ">=10.17.0 <10.25.0",
-                "laravel/framework": ">=10.17.0 <10.25.0"
+                "Laravel/framework": ">=10.17.0 <10.25.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
@@ -1314,22 +1314,22 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.1.25"
+                "issues": "https://github.com/Laravel/prompts/issues",
+                "source": "https://github.com/Laravel/prompts/tree/v0.1.25"
             },
             "time": "2024-08-12T22:06:33+00:00"
         },
         {
-            "name": "laravel/sanctum",
+            "name": "Laravel/sanctum",
             "version": "v3.3.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/sanctum.git",
+                "url": "https://github.com/Laravel/sanctum.git",
                 "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/8c104366459739f3ada0e994bcd3e6fd681ce3d5",
+                "url": "https://api.github.com/repos/Laravel/sanctum/zipball/8c104366459739f3ada0e994bcd3e6fd681ce3d5",
                 "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5",
                 "shasum": ""
             },
@@ -1349,7 +1349,7 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Laravel\\Sanctum\\SanctumServiceProvider"
                     ]
@@ -1370,32 +1370,32 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 }
             ],
             "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
             "keywords": [
                 "auth",
-                "laravel",
+                "Laravel",
                 "sanctum"
             ],
             "support": {
-                "issues": "https://github.com/laravel/sanctum/issues",
-                "source": "https://github.com/laravel/sanctum"
+                "issues": "https://github.com/Laravel/sanctum/issues",
+                "source": "https://github.com/Laravel/sanctum"
             },
             "time": "2023-12-19T18:44:48+00:00"
         },
         {
-            "name": "laravel/serializable-closure",
+            "name": "Laravel/serializable-closure",
             "version": "v1.3.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/serializable-closure.git",
+                "url": "https://github.com/Laravel/serializable-closure.git",
                 "reference": "4f48ade902b94323ca3be7646db16209ec76be3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/4f48ade902b94323ca3be7646db16209ec76be3d",
+                "url": "https://api.github.com/repos/Laravel/serializable-closure/zipball/4f48ade902b94323ca3be7646db16209ec76be3d",
                 "reference": "4f48ade902b94323ca3be7646db16209ec76be3d",
                 "shasum": ""
             },
@@ -1427,36 +1427,36 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 },
                 {
                     "name": "Nuno Maduro",
-                    "email": "nuno@laravel.com"
+                    "email": "nuno@Laravel.com"
                 }
             ],
             "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
             "keywords": [
                 "closure",
-                "laravel",
+                "Laravel",
                 "serializable"
             ],
             "support": {
-                "issues": "https://github.com/laravel/serializable-closure/issues",
-                "source": "https://github.com/laravel/serializable-closure"
+                "issues": "https://github.com/Laravel/serializable-closure/issues",
+                "source": "https://github.com/Laravel/serializable-closure"
             },
             "time": "2024-11-14T18:34:49+00:00"
         },
         {
-            "name": "laravel/tinker",
+            "name": "Laravel/tinker",
             "version": "v2.10.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/tinker.git",
+                "url": "https://github.com/Laravel/tinker.git",
                 "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/22177cc71807d38f2810c6204d8f7183d88a57d3",
+                "url": "https://api.github.com/repos/Laravel/tinker/zipball/22177cc71807d38f2810c6204d8f7183d88a57d3",
                 "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3",
                 "shasum": ""
             },
@@ -1478,7 +1478,7 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Laravel\\Tinker\\TinkerServiceProvider"
                     ]
@@ -1496,19 +1496,19 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 }
             ],
             "description": "Powerful REPL for the Laravel framework.",
             "keywords": [
                 "REPL",
                 "Tinker",
-                "laravel",
+                "Laravel",
                 "psysh"
             ],
             "support": {
-                "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.10.1"
+                "issues": "https://github.com/Laravel/tinker/issues",
+                "source": "https://github.com/Laravel/tinker/tree/v2.10.1"
             },
             "time": "2025-01-27T14:24:01+00:00"
         },
@@ -2036,7 +2036,7 @@
             ],
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Carbon\\Laravel\\ServiceProvider"
                     ]
@@ -2327,7 +2327,7 @@
             "require-dev": {
                 "illuminate/console": "^10.48.24",
                 "illuminate/support": "^10.48.24",
-                "laravel/pint": "^1.18.2",
+                "Laravel/pint": "^1.18.2",
                 "pestphp/pest": "^2.36.0",
                 "pestphp/pest-plugin-mock": "2.0.0",
                 "phpstan/phpstan": "^1.12.11",
@@ -2337,7 +2337,7 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Termwind\\Laravel\\TermwindServiceProvider"
                     ]
@@ -5799,16 +5799,16 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
-            "name": "laravel/breeze",
+            "name": "Laravel/breeze",
             "version": "v1.29.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/breeze.git",
+                "url": "https://github.com/Laravel/breeze.git",
                 "reference": "22c53b84b7fff91b01a318d71a10dfc251e92849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/22c53b84b7fff91b01a318d71a10dfc251e92849",
+                "url": "https://api.github.com/repos/Laravel/breeze/zipball/22c53b84b7fff91b01a318d71a10dfc251e92849",
                 "reference": "22c53b84b7fff91b01a318d71a10dfc251e92849",
                 "shasum": ""
             },
@@ -5825,7 +5825,7 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Laravel\\Breeze\\BreezeServiceProvider"
                     ]
@@ -5846,31 +5846,31 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 }
             ],
             "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
             "keywords": [
                 "auth",
-                "laravel"
+                "Laravel"
             ],
             "support": {
-                "issues": "https://github.com/laravel/breeze/issues",
-                "source": "https://github.com/laravel/breeze"
+                "issues": "https://github.com/Laravel/breeze/issues",
+                "source": "https://github.com/Laravel/breeze"
             },
             "time": "2024-03-04T14:35:21+00:00"
         },
         {
-            "name": "laravel/pint",
+            "name": "Laravel/pint",
             "version": "v1.21.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/pint.git",
+                "url": "https://github.com/Laravel/pint.git",
                 "reference": "531fa0871fbde719c51b12afa3a443b8f4e4b425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/531fa0871fbde719c51b12afa3a443b8f4e4b425",
+                "url": "https://api.github.com/repos/Laravel/pint/zipball/531fa0871fbde719c51b12afa3a443b8f4e4b425",
                 "reference": "531fa0871fbde719c51b12afa3a443b8f4e4b425",
                 "shasum": ""
             },
@@ -5885,7 +5885,7 @@
                 "friendsofphp/php-cs-fixer": "^3.68.5",
                 "illuminate/view": "^11.42.0",
                 "larastan/larastan": "^3.0.4",
-                "laravel-zero/framework": "^11.36.1",
+                "Laravel-zero/framework": "^11.36.1",
                 "mockery/mockery": "^1.6.12",
                 "nunomaduro/termwind": "^2.3",
                 "pestphp/pest": "^2.36.0"
@@ -5912,7 +5912,7 @@
                 }
             ],
             "description": "An opinionated code formatter for PHP.",
-            "homepage": "https://laravel.com",
+            "homepage": "https://Laravel.com",
             "keywords": [
                 "format",
                 "formatter",
@@ -5921,22 +5921,22 @@
                 "php"
             ],
             "support": {
-                "issues": "https://github.com/laravel/pint/issues",
-                "source": "https://github.com/laravel/pint"
+                "issues": "https://github.com/Laravel/pint/issues",
+                "source": "https://github.com/Laravel/pint"
             },
             "time": "2025-02-18T03:18:57+00:00"
         },
         {
-            "name": "laravel/sail",
+            "name": "Laravel/sail",
             "version": "v1.41.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/sail.git",
+                "url": "https://github.com/Laravel/sail.git",
                 "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
+                "url": "https://api.github.com/repos/Laravel/sail/zipball/fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
                 "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
                 "shasum": ""
             },
@@ -5957,7 +5957,7 @@
             ],
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "Laravel\\Sail\\SailServiceProvider"
                     ]
@@ -5975,17 +5975,17 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                    "email": "taylor@Laravel.com"
                 }
             ],
             "description": "Docker files for running a basic Laravel application.",
             "keywords": [
                 "docker",
-                "laravel"
+                "Laravel"
             ],
             "support": {
-                "issues": "https://github.com/laravel/sail/issues",
-                "source": "https://github.com/laravel/sail"
+                "issues": "https://github.com/Laravel/sail/issues",
+                "source": "https://github.com/Laravel/sail"
             },
             "time": "2025-01-24T15:45:36+00:00"
         },
@@ -6153,25 +6153,25 @@
                 "symfony/console": "^6.4.12"
             },
             "conflict": {
-                "laravel/framework": ">=11.0.0"
+                "Laravel/framework": ">=11.0.0"
             },
             "require-dev": {
                 "brianium/paratest": "^7.3.1",
-                "laravel/framework": "^10.48.22",
-                "laravel/pint": "^1.18.1",
-                "laravel/sail": "^1.36.0",
-                "laravel/sanctum": "^3.3.3",
-                "laravel/tinker": "^2.10.0",
+                "Laravel/framework": "^10.48.22",
+                "Laravel/pint": "^1.18.1",
+                "Laravel/sail": "^1.36.0",
+                "Laravel/sanctum": "^3.3.3",
+                "Laravel/tinker": "^2.10.0",
                 "nunomaduro/larastan": "^2.9.8",
                 "orchestra/testbench-core": "^8.28.3",
                 "pestphp/pest": "^2.35.1",
                 "phpunit/phpunit": "^10.5.36",
                 "sebastian/environment": "^6.1.0",
-                "spatie/laravel-ignition": "^2.8.0"
+                "spatie/Laravel-ignition": "^2.8.0"
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "providers": [
                         "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
                     ]
@@ -6203,8 +6203,8 @@
                 "console",
                 "error",
                 "handling",
-                "laravel",
-                "laravel-zero",
+                "Laravel",
+                "Laravel-zero",
                 "php",
                 "symfony"
             ],
@@ -7703,7 +7703,7 @@
             },
             "require-dev": {
                 "ext-json": "*",
-                "laravel/serializable-closure": "^1.3 || ^2.0",
+                "Laravel/serializable-closure": "^1.3 || ^2.0",
                 "phpunit/phpunit": "^9.3 || ^11.4.3",
                 "spatie/phpunit-snapshot-assertions": "^4.2 || ^5.1.6",
                 "symfony/var-dumper": "^5.1 || ^6.0 || ^7.0"
@@ -7789,7 +7789,7 @@
                 "psr-4": {
                     "Spatie\\Ignition\\": "legacy/ignition",
                     "Spatie\\ErrorSolutions\\": "src",
-                    "Spatie\\LaravelIgnition\\": "legacy/laravel-ignition"
+                    "Spatie\\LaravelIgnition\\": "legacy/Laravel-ignition"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7956,11 +7956,11 @@
             "keywords": [
                 "error",
                 "flare",
-                "laravel",
+                "Laravel",
                 "page"
             ],
             "support": {
-                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
+                "docs": "https://flareapp.io/docs/ignition-for-Laravel/introduction",
                 "forum": "https://twitter.com/flareappio",
                 "issues": "https://github.com/spatie/ignition/issues",
                 "source": "https://github.com/spatie/ignition"
@@ -7974,16 +7974,16 @@
             "time": "2025-02-21T14:31:39+00:00"
         },
         {
-            "name": "spatie/laravel-ignition",
+            "name": "spatie/Laravel-ignition",
             "version": "2.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/spatie/laravel-ignition.git",
+                "url": "https://github.com/spatie/Laravel-ignition.git",
                 "reference": "1baee07216d6748ebd3a65ba97381b051838707a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/1baee07216d6748ebd3a65ba97381b051838707a",
+                "url": "https://api.github.com/repos/spatie/Laravel-ignition/zipball/1baee07216d6748ebd3a65ba97381b051838707a",
                 "reference": "1baee07216d6748ebd3a65ba97381b051838707a",
                 "shasum": ""
             },
@@ -8014,7 +8014,7 @@
             },
             "type": "library",
             "extra": {
-                "laravel": {
+                "Laravel": {
                     "aliases": {
                         "Flare": "Spatie\\LaravelIgnition\\Facades\\Flare"
                     },
@@ -8047,14 +8047,14 @@
             "keywords": [
                 "error",
                 "flare",
-                "laravel",
+                "Laravel",
                 "page"
             ],
             "support": {
-                "docs": "https://flareapp.io/docs/ignition-for-laravel/introduction",
+                "docs": "https://flareapp.io/docs/ignition-for-Laravel/introduction",
                 "forum": "https://twitter.com/flareappio",
-                "issues": "https://github.com/spatie/laravel-ignition/issues",
-                "source": "https://github.com/spatie/laravel-ignition"
+                "issues": "https://github.com/spatie/Laravel-ignition/issues",
+                "source": "https://github.com/spatie/Laravel-ignition"
             },
             "funding": [
                 {
